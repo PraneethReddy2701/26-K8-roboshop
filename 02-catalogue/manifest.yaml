@@ -40,7 +40,7 @@ spec:
         image: praneeth2701/catalogue:v2
         envFrom:
         - configMapRef:
-          name: catalogue
+            name: catalogue
 
 ---
 
