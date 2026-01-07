@@ -28,6 +28,12 @@ spec:
       component: catalogue
       project: roboshop
       tier: app
+  template:
+    metadata:
+      labels:
+        component: catalogue
+        project: roboshop
+        tier: app
     spec:
       containers:
       - name: catalogue
