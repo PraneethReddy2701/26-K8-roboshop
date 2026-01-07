@@ -4,7 +4,7 @@ metadata:
   name: user
   namespace: roboshop
   labels:
-    component: redis
+    component: user
     project: roboshop
     tier: app
 data:
@@ -20,20 +20,20 @@ metadata:
   name: user
   namespace: roboshop
   labels:
-    component: redis
+    component: user
     project: roboshop
     tier: app
 spec:
   replicas: 1
   selector:
     matchLabels:
-      component: redis
+      component: user
       project: roboshop
       tier: app
   template:
     metadata:
       labels:
-        component: redis
+        component: user
         project: roboshop
         tier: app
     spec:
@@ -52,12 +52,12 @@ metadata:
   name: user
   namespace: roboshop
   labels:
-    component: redis
+    component: user
     project: roboshop
     tier: app
 spec:
   selector:
-    component: redis
+    component: user
     project: roboshop
     tier: app
   ports:
